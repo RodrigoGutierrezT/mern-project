@@ -4,6 +4,10 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 
+// Middlewares
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+
 // Mount Routes
 app.use('/api/goals', require('./routes/goalRoutes'));
 
