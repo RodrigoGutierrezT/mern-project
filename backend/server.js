@@ -14,6 +14,7 @@ app.use(express.urlencoded({extended: false}));
 
 // Mount Routes
 app.use('/api/goals', require('./routes/goalRoutes'));
+app.use('/api/users', require('./routes/userRoutes'));
 
 
 // Custom error handler
